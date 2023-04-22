@@ -1,0 +1,42 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+* {
+  font-family: "FiraCode Nerd Font" !important;
+}
+
+/* ROOT - VARS */
+*|*:root {
+  --tab-min-height: 20px !important; /* adjust */
+  --tab-min-width: 60px !important; /* adjust */
+}
+
+/* Curve the background tabs at the upper left and right corners
+   May not work on add-on themes. */
+.tabbrowser-tab {
+  padding: 0 auto !important;
+  height: 30px;
+}
+/* Curve active tab and slightly overlap neighboring tabs */
+.tabbrowser-tab .tab-background[selected="true"] {
+  margin-left: -1px !important;
+  margin-right: -1px !important;
+  margin-top: 2px !important;
+  padding: 0 auto !important;
+}
+/* Remove the tab line along the tops of tabs */
+.tab-line {
+  transform: none !important;
+  background-color: transparent !important;
+}
+/* Remove the vertical lines between background tabs */
+.tabbrowser-tab::before,
+.tabbrowser-tab::after {
+  margin-bottom: 0.2px !important;
+  border-left: none !important; /* Remove borders from inactive tabs */
+}
+
+.tab-icon-sound-label {
+  display: none !important;
+}
+#nav-bar {
+  max-height: 30px !important;
+}
