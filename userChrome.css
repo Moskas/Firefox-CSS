@@ -13,7 +13,7 @@
    May not work on add-on themes. */
 .tabbrowser-tab {
   padding: 0 auto !important;
-  height: 30px;
+  height: 35px;
 }
 /* Curve active tab and slightly overlap neighboring tabs */
 .tabbrowser-tab .tab-background[selected="true"] {
