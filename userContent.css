@@ -20,20 +20,22 @@
 }
 
 @-moz-document domain(fosstodon.org) {
-  * {
-  }
   .layout-single-column .ui__header {
     background-color: var(--bg0) !important;
   }
+
   a {
     color: var(--orange) !important;
   }
+
   a.button {
     background-color: var(--blue);
   }
+
   a.button:hover {
     background-color: #83a598 !important;
   }
+
   .status__prepend,
   .status,
   .status-public,
@@ -41,22 +43,26 @@
     color: var(--fg0) !important;
     background-color: var(--bg0) !important;
   }
+
   .column-header {
     background-color: var(--bg1) !important;
     color: var(--fg1) !important;
   }
+
   .status__prepend,
   .status,
   .status-public,
   .status-reply,
-  .column-header > p {
+  .column-header>p {
     color: var(--fg0) !important;
   }
+
   bdi {
     strong {
       color: #b8bb26 !important;
     }
   }
+
   .columns-area__panels__pane--navigational .navigation-panel {
     background-color: var(--bg0) !important;
   }
@@ -66,13 +72,16 @@
   .Header {
     background-color: var(--bg0) !important;
   }
+
   .header-search-button {
     background-color: var(--bg0h) !important;
   }
-  repo > a {
+
+  repo>a {
     color: var(--red) !important;
   }
-  repo > pinned-item-list-item {
+
+  repo>pinned-item-list-item {
     background-color: var(--bg1) !important;
     color: var(--fg0);
   }
@@ -83,22 +92,19 @@
     font-family: "JetBrainsMono Nerd Font" !important;
     color: var(--fg0) !important;
   }
+
   pre {
     bg-black {
       background-color: var(--bg0);
     }
   }
-  text-base {
-  }
+
+  text-base {}
 }
+
 @-moz-document domain(youtube.com) {
   * {
-    font-family: "FiraCode Nerd Font" !important;
-    color: var(--fg1) !important;
-  }
-  html,
-  body {
-    background-color: var(--bg1) !important;
+    font-family: "JetBrainsMono Nerd Font" !important;
   }
 }
 
